@@ -1,0 +1,15 @@
+*.pyc
+
+# Un commentaire, cette ligne est ignorée
+# Pas de fichier .a
+*.a
+# Mais suivre lib.a malgré la règle précédente
+!lib.a
+# Ignorer uniquement le fichier TODO à la racine du projet
+/TODO
+# Ignorer tous les fichiers dans le répertoire build
+build/
+# Ignorer doc/notes.txt, mais pas doc/server/arch.txt
+doc/*.txt
+# Ignorer tous les fichiers .txt sous le répertoire doc/ (depuis 1.8.2)
+doc/**/*.txt
